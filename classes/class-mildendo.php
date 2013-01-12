@@ -25,6 +25,10 @@ class Mildendo {
 
 		add_filter( 'wp_title', array( &$this, 'wp_title' ) );
 
+		register_nav_menus(
+			array( 'footer-menu' => 'Footer Menu' )
+		);
+
 	}
 
 	public function wp_enqueue_scripts() {
