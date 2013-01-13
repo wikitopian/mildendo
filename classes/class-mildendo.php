@@ -26,13 +26,13 @@ class Mildendo {
 		add_filter( 'wp_title', array( &$this, 'wp_title' ) );
 
 		register_sidebar( array(
-			'id'          => 'main',
-			'name'        => 'Main Sidebar',
-			'description' => 'Main sidebar',
-			'before_widget' => '',
-			'after_widget' => '</li>',
-			'before_title' => '<li data-role="list-divider">',
-			'after_title' => '</li><li>'
+			'id'            => 'main',
+			'name'          => 'Main Sidebar',
+			'description'   => 'Main sidebar',
+			'before_widget' => '<div class="mildendo-widget" data-role="collapsible-set"><div data-role="collapsible">',
+			'after_widget'  => '</li></ul></div></div>',
+			'before_title'  => '<h2>',
+			'after_title'   => '</h2><ul data-role="listview"><li>'
 		) );
 
 		register_nav_menus(

@@ -11,7 +11,8 @@ class Mildendo_Walker_Nav_Menu extends Walker_Nav_Menu {
 	}
 
 	function start_el( &$output, $item, $depth ) {
-		$output  .= " <a href='{$item->url}' ";
+		$output .= " <a href='{$item->url}' ";
+		$output .= " class='mildendo-desktop-buttons' ";
 		if( $item->attr_title ) {
 			$output .= " data-icon='{$item->attr_title}' ";
 		}

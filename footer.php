@@ -1,4 +1,4 @@
-		<div data-role="footer">
+		<div data-role="footer" data-position="fixed">
 			<h4><?php bloginfo( 'description' ); ?></h4>
 
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-left">
