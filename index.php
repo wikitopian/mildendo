@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div data-role="content">
+<div data-role="content" id="top">
 
 	<div class="content-secondary">
 		<section id="sidebar">
@@ -12,7 +12,18 @@
 		<section id="content">
 
 			<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
+				<?php
+					$mildendo_full = wp_get_attachment_image_src(
+						get_post_thumbnail_id( $post->ID ),
+						'full'
+					);
+				?>
+				<div
+					id="featured"
+					full="<?php echo $mildendo_full[0]; ?>"
+					>
+					<?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
+				</div>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h2>
 						<?php if( is_single() ) { ?>
@@ -26,7 +37,7 @@
 					<?php the_content( 'Read more' ) ;?>
 					<?php //get_template_part( 'meta' ); ?>
 				</article>
-
+				
 			<?php //comments_template(); ?>
 
 			<?php endwhile; else: ?>

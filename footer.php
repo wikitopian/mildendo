@@ -1,8 +1,8 @@
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer">
 			<h4><?php bloginfo( 'description' ); ?></h4>
 
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-left">
-				<a href="#home" data-icon="arrow-u" data-role="button" >Top</a>
+				<a href="#home" data-icon="arrow-u" data-role="button" rel="external">Top</a>
 			</div>
 
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">

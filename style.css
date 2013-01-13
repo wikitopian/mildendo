@@ -80,6 +80,39 @@
 	}
 }
 
+@media all and (max-width: 999px) {
+	#featured {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#featured img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	#featured {
+		float: right;
+		width: 30%;
+		position: fixed;
+		top: 25%;
+		right: 5%;
+	}
+
+	#featured img {
+		width: 100%;
+		height: auto;
+	}
+
+	article {
+		width: 50%;
+		max-width: 25em;
+	}
+}
+
 #wp-calendar {
 	margin-left: auto;
 	margin-right: auto;
