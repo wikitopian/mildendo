@@ -26,6 +26,23 @@ class Mildendo {
 
 		add_filter( 'wp_title', array( &$this, 'wp_title' ) );
 
+		$custom_header_image = "{$this->dir}/images/mildendo-default.png";
+		$custom_header = array(
+			'default-image'          => $custom_header_image,
+			'random-default'         => false,
+			'width'                  => 600,
+			'height'                 => 600,
+			'flex-height'            => false,
+			'flex-width'             => false,
+			'default-text-color'     => '#000',
+			'header-text'            => false,
+			'uploads'                => true,
+			'wp-head-callback'       => '',
+			'admin-head-callback'    => '',
+			'admin-preview-callback' => '',
+		);
+		add_theme_support( 'custom-header', $custom_header );
+
 		register_sidebar( array(
 			'id'            => 'main',
 			'name'          => 'Main Sidebar',

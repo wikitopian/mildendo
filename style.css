@@ -62,6 +62,17 @@
 
 @media all and (max-width: 599px) {
 	margin-top: 25px;
+
+	#mildendo-header {
+		width: 250px;
+		overflow: hidden;
+	}
+
+	#mildendo-header img {
+		width: 100%;
+		height: auto;
+	}
+
 }
 
 @media all and (min-width: 600px) {
@@ -77,6 +88,15 @@
 		text-align: left;
 		width: auto;
 		overflow: hidden;
+	}
+
+	#mildendo-header {
+		width: 250px;
+	}
+
+	#mildendo-header img {
+		width: 100%;
+		height: auto;
 	}
 }
 

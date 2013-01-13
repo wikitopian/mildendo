@@ -4,6 +4,11 @@
 
 	<div class="content-secondary">
 		<section id="sidebar">
+			<div id="mildendo-header">
+				<img
+					src="<?php header_image(); ?>"
+					alt="Site Logo" />
+			</div>
 			<?php get_sidebar(); ?>
 		</section>
 	</div>
