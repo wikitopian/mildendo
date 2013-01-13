@@ -35,6 +35,8 @@ class Mildendo {
 			'after_title'   => '</h2><ul data-role="listview"><li>'
 		) );
 
+		register_widget( 'Mildendo_Widget_Search' );
+
 		register_nav_menus(
 			array( 'footer-menu' => 'Footer Menu' )
 		);

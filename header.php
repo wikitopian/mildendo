@@ -21,8 +21,15 @@
 
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
 				
-			<a class="mildendo-desktop-buttons" rel="external"
-				href="<?php echo home_url(); ?>/wp-admin" data-icon="gear" data-role="button" >Dashboard</a>
+				<a
+					class="mildendo-desktop-buttons"
+					rel="external"
+					href="<?php echo home_url(); ?>/wp-admin"
+					data-icon="gear"
+					data-role="button"
+					>
+					Dashboard
+				</a>
 				<?php if( is_user_logged_in() ) { ?>
 					<a
 						class="mildendo-desktop-buttons"
@@ -32,7 +39,5 @@
 						Log Out
 					</a>
 				<?php } ?>
-				<a href="<?php echo home_url(); ?>/search" data-icon="search" data-role="button" rel="external">Search</a>
-
 			</div>
 		</div>
