@@ -1,15 +1,41 @@
 /*
- * Theme Name: Mildendo
- * Theme URI: https://github.com/wikitopian/mildendo
- * Description: jQuery Mobile, yet desktop-friendly
- * Author: Matt Parrott
- * Author URI: http://www.swarmstrategies.com/matt
- * Version: 1.0
- * Tags:
- *
- * License: GPLv2
- *
- * A theme you can write once and run on anything
- * */
+* Theme Name: Mildendo
+* Theme URI: https://github.com/wikitopian/mildendo
+* Description: jQuery Mobile, yet desktop-friendly
+* Author: Matt Parrott
+* Author URI: http://www.swarmstrategies.com/matt
+* Version: 1.0
+* Tags:
+*
+* License: GPLv2
+*
+* A theme you can write once and run on anything
+* */
 
+@media all {
+}
 
+@media all and (max-width: 599px) {
+	margin-top: 25px;
+}
+
+@media all and (min-width: 600px) {
+
+	.content-secondary {
+		float: left;
+		text-align: left;
+		width: 200px;
+		margin-right: 30px;
+	}
+
+	.ui-listview, .ui-li {
+		background-color: inherit;
+		border-right: 1px solid gray;
+	}
+
+	.content-primary {
+		text-align: left;
+		width: auto;
+		overflow: hidden;
+	}
+}
