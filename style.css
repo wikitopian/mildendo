@@ -13,6 +13,51 @@
 * */
 
 @media all {
+
+/* Images
+----------------------------------------------*/
+	.alignleft {
+		display:inline;
+		float:left;
+		margin:0 10px 10px 0;
+	}
+
+	.alignright {
+		display:inline;
+		float:right;
+		margin:0 0 10px 10px;
+	}
+
+	.aligncenter {
+		clear:both;
+		display:block;
+		margin:0 auto 10px;
+	}
+
+	.wp-caption {
+		background:#fff;
+		margin-bottom:20px;
+		border:1px solid #f6f6f6;
+		padding:4px;
+	}
+
+	.wp-caption img {
+		margin:5px 5px 0;
+	}
+
+	.wp-caption-text {
+		color:#aaa;
+		text-align:center;
+		font-size:11px;
+		margin:5px;
+	}
+
+	/* General Styles 
+	----------------------------------------------*/
+	.clear {
+		clear: both;
+	}
+
 }
 
 @media all and (max-width: 599px) {
