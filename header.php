@@ -16,7 +16,7 @@
 		<div data-role="header">
 			<h1><?php wp_title(); ?></h1>
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-left">
-				<a name="home" href="<?php get_home_url( '/' ); ?>" data-icon="home" data-role="button" >Home</a>
+				<a name="home" href="<?php echo home_url(); ?>" data-icon="home" data-role="button" >Home</a>
 			</div>
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
 				
@@ -29,7 +29,7 @@
 						Log Out
 					</a>
 				<?php } ?>
-				<a href="<?php get_home_url( '/' ); ?>/search" data-icon="search" data-role="button" >Search</a>
+				<a href="<?php echo home_url(); ?>/search" data-icon="search" data-role="button" >Search</a>
 
 			</div>
 		</div>
