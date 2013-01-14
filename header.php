@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 </head>
 <body <?php body_class(); ?>>
-	<div data-role="page">
+	<div data-role="page" data-theme="a">
 
 		<div data-role="header">
 			<h1><?php wp_title(); ?></h1>
