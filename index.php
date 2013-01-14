@@ -4,11 +4,6 @@
 
 	<div class="content-secondary">
 		<section id="sidebar">
-			<div id="mildendo-header">
-				<img
-					src="<?php header_image(); ?>"
-					alt="Site Logo" />
-			</div>
 			<?php get_sidebar(); ?>
 		</section>
 	</div>
@@ -18,16 +13,25 @@
 
 			<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php
-					$mildendo_full = wp_get_attachment_image_src(
-						get_post_thumbnail_id( $post->ID ),
-						'full'
-					);
+					if( is_single() || is_front_page() ) {
+						$mildendo_full_array = wp_get_attachment_image_src(
+							get_post_thumbnail_id( $post->ID ),
+							'full'
+						);
+						$mildendo_full_src = $mildendo_full_array[0];
+						$mildendo_full = "<img src='{$mildendo_full_src}' class='attachment-thumbnail wp-post-image' alt='' />";
+						$mildendo_thumbnail = get_the_post_thumbnail($post->ID, 'thumbnail');
+					} else {
+						$mildendo_full_src = get_header_image();
+						$mildendo_full = "<img src='{$mildendo_full_src}' class='attachment-thumbnail wp-post-image' alt='' />";
+						$mildendo_thumbnail = $mildendo_full;
+					}
 				?>
 				<div
 					id="featured"
-					full="<?php echo $mildendo_full[0]; ?>"
+					full="<?php echo $mildendo_full_src; ?>"
 					>
-					<?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
+					<?php echo $mildendo_thumbnail; ?>
 				</div>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h2>

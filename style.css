@@ -58,6 +58,15 @@
 		clear: both;
 	}
 
+	.ui-body-a,
+	a.ui-link {
+		text-decoration: none;
+	}
+
+	a.ui-link:hover {
+		text-decoration: underline;
+	}
+
 }
 
 @media all and (max-width: 599px) {
