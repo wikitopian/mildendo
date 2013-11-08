@@ -67,7 +67,7 @@ class Mildendo {
 
 		wp_enqueue_script(
 			'jquerymobile',
-			'http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js',
+			'http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.js',
 			array( 'jquery' )
 		);
 
@@ -82,7 +82,7 @@ class Mildendo {
 
 		wp_register_style(
 			'jquerymobile',
-			'http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css'
+			'http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.css'
 		);
 		wp_enqueue_style( 'jquerymobile' );
 	}
