@@ -44,13 +44,23 @@ class Mildendo {
 		add_theme_support( 'custom-header', $custom_header );
 
 		register_sidebar( array(
-			'id'            => 'main',
-			'name'          => 'Main Sidebar',
-			'description'   => 'Main sidebar',
-			'before_widget' => '<div class="mildendo-widget" data-role="collapsible-set"><div data-role="collapsible">',
-			'after_widget'  => '</li></ul></div></div>',
-			'before_title'  => '<h2>',
-			'after_title'   => '</h2><ul data-role="listview"><li>'
+			'id'            => 'opened',
+			'name'          => 'Open Sidebar',
+			'description'   => 'Expanded by default',
+			'before_widget' => '<div class="mildendo-widget" id="mildendo-widget-opened" data-collapsed="false" data-role="collapsible">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
+		) );
+
+		register_sidebar( array(
+			'id'            => 'closed',
+			'name'          => 'Closed Sidebar',
+			'description'   => 'Collapsed by default',
+			'before_widget' => '<div class="mildendo-widget" id="mildendo-widget-closed" data-collapsed="true" data-role="collapsible">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
 		) );
 
 		register_widget( 'Mildendo_Widget_Search' );
