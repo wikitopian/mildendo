@@ -1,5 +1,7 @@
 <?php
 
+define( 'JQMVERSION', '1.4.3' );
+
 class Mildendo {
 	private $dir;
 
@@ -73,11 +75,9 @@ class Mildendo {
 
 	public function wp_enqueue_scripts() {
 
-		wp_enqueue_script( 'jquery' );
-
 		wp_enqueue_script(
 			'jquerymobile',
-			'http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.js',
+			'http://code.jquery.com/mobile/'.JQMVERSION.'/jquery.mobile-'.JQMVERSION.'.js',
 			array( 'jquery' )
 		);
 
@@ -92,7 +92,7 @@ class Mildendo {
 
 		wp_register_style(
 			'jquerymobile',
-			'http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.css'
+			'http://code.jquery.com/mobile/'.JQMVERSION.'/jquery.mobile-'.JQMVERSION.'.css'
 		);
 		wp_enqueue_style( 'jquerymobile' );
 	}
