@@ -29,27 +29,7 @@
 				<div class="content-primary">
 
 						<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-							<?php
-								if( is_single() || is_front_page() ) {
-									$mildendo_full_array = wp_get_attachment_image_src(
-										get_post_thumbnail_id( $post->ID ),
-										'full'
-									);
-									$mildendo_full_src = $mildendo_full_array[0];
-									$mildendo_full = "<img src='{$mildendo_full_src}' class='attachment-thumbnail wp-post-image' alt='' />";
-									$mildendo_thumbnail = get_the_post_thumbnail($post->ID, 'thumbnail');
-								} else {
-									$mildendo_full_src = get_header_image();
-									$mildendo_full = "<img src='{$mildendo_full_src}' class='attachment-thumbnail wp-post-image' alt='' />";
-									$mildendo_thumbnail = $mildendo_full;
-								}
-							?>
-							<div
-								id="featured"
-								full="<?php echo $mildendo_full_src; ?>"
-								>
-								<?php echo $mildendo_thumbnail; ?>
-							</div>
+
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<?php get_template_part( 'content', get_post_format() ); ?>
 							</article>
