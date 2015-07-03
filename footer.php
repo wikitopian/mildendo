@@ -13,7 +13,6 @@
 					'theme_location' => 'footer-menu',
 					'container' => '',
 					'items_wrap' => '%3$s',
-					'walker' => new Mildendo_Walker_Nav_Menu
 				)
 			); ?>
 		</nav>

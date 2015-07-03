@@ -10,5 +10,3 @@
 <?php dynamic_sidebar( 'opened' ); ?>
 
 <?php dynamic_sidebar( 'closed' ); ?>
-
-<?php the_widget( 'Mildendo_Widget_Search' ); ?>

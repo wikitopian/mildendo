@@ -65,7 +65,7 @@ class Mildendo {
 			'after_title'   => '</h3>'
 		) );
 
-		register_widget( 'Mildendo_Widget_Search' );
+		//register_widget( 'Mildendo_Widget_Search' );
 
 		register_nav_menus(
 			array( 'footer-menu' => 'Footer Menu' )
@@ -116,6 +116,6 @@ class Mildendo {
 
 		// concoct and return title
 		if( !is_feed() ) return get_bloginfo( 'name' ) . $page_type . $title . $page_num;
-		else return $old_title;
+		else return $title;
 	}
 }
