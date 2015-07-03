@@ -5,7 +5,7 @@ jQuery(function ($) {
 	});
 
 	// Selectively hide menu items on small screens
-	if($(window).width() < 600) {
+	if($(window).width() < 750) {
 
 		$('.mildendo-desktop-buttons').hide();
 		$(".mildendo-widget > h3").click();

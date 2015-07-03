@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
 
 }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 749px) {
 	margin-top: 25px;
 
 	#mildendo-header {
@@ -86,9 +86,21 @@ h1, h2, h3, h4, h5 {
 		height: auto;
 	}
 
+	td#mildendo_table_article {
+		width: 100%;
+	}
+
+	td#mildendo_right {
+		width: 0px;
+	}
+
+	article {
+		width: auto;
+	}
+
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 750px) {
 
 	.content-secondary {
 		float: left;
@@ -111,6 +123,19 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 		height: auto;
 	}
+
+	td#mildendo_table_article {
+		width: 100%;
+	}
+
+	td#mildendo_right {
+		width: 0px;
+	}
+
+	article {
+		width: auto;
+	}
+
 }
 
 @media all and (max-width: 999px) {
@@ -124,6 +149,19 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 		height: auto;
 	}
+
+	td#mildendo_table_article {
+		width: 100%;
+	}
+
+	td#mildendo_right {
+		width: 0px;
+	}
+
+	article {
+		max-width: 30em;
+	}
+
 }
 
 @media all and (min-width: 1000px) {
@@ -140,14 +178,33 @@ h1, h2, h3, h4, h5 {
 		height: auto;
 	}
 
-	article {
-		width: 50%;
-		max-width: 25em;
-		padding-bottom: 2em;
+	td#mildendo_table_article {
+		width: inherit;
 	}
+
+	td#mildendo_right {
+		width: 100%;
+		vertical-align: top;
+	}
+
+	td#mildendo_right img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		height: auto;
+		margin-top: 100px;
+	}
+
+	article {
+		width: 30em;
+	}
+
 }
 
-
+article {
+	padding-bottom: 2em;
+}
 
 #wp-calendar {
 	margin-left: auto;
@@ -170,10 +227,6 @@ background: #fbfbfb;}
 	list-style-type: none;
 	padding-right: inherit;
 	padding-bottom: 1em;
-}
-
-#comments {
-	max-width: 25em;
 }
 
 .comment {
@@ -218,8 +271,9 @@ background: #fbfbfb;}
 }
 
 #mildendo_nav {
-	width: 50%;
-	max-width: 25em;
 	padding-bottom: 2em;
 }
 
+table#mildendo_table {
+	width: 100%;
+}

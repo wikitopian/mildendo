@@ -118,4 +118,8 @@ class Mildendo {
 		if( !is_feed() ) return get_bloginfo( 'name' ) . $page_type . $title . $page_num;
 		else return $title;
 	}
+
+	public function get_side_image() {
+		return 'http://content.tradyouth.org/uploads/2015/07/cropped-tradyouth-mildendo-header-2015-07-03v03.png';
+	}
 }

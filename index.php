@@ -28,6 +28,12 @@
 
 				<div class="content-primary">
 
+					<table id="mildendo_table">
+
+						<tr>
+
+							<td id="mildendo_table_article">
+
 						<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -40,13 +46,23 @@
 							<h2>Not Found</h2>
 							<p>Sorry, you seem to be looking for something that simply is not here.</p>
 						<?php endif; ?>
-
 						<div id="mildendo_nav">
 
 							<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
 							<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
-						</div>
+							</td>
+
+							<td id="mildendo_right">
+								<img src="<?php echo $mildendo->get_side_image(); ?>" />
+							</td>
+
+						</tr>
+
+					</table>
+
+
+					</div>
 
 				</div> <!-- div class="content-primary" -->
 
