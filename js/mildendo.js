@@ -7,6 +7,8 @@ jQuery(function ($) {
 		$('#featured img').attr('src', full_featured_image);
 	} else {
 		$('.mildendo-desktop-buttons').hide();
+		$(".mildendo-widget > h3").click();
+
 	}
 
 	// Search box default text
