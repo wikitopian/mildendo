@@ -146,3 +146,15 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.subscribe-label {
+    font-size: small !important;
+}
+
+#comments:before { content: ''; display: table; clear both; margin-top: 1em; }
+#comments { border-top: 0.2em solid #888; }
+ol.commentlist li { margin-bottom: 1em; padding: 0.5em;}
+ol.commentlist li:nth-child(odd) {
+background: #eee; }
+ol.commentlist li:nth-child(even) {
+background: #fbfbfb;}
