@@ -12,6 +12,10 @@
 * A theme you can write once and run on anything
 * */
 
+h1, h2, h3, h4, h5 {
+	font-family: im_fell_english;
+}
+
 @media all {
 
 /* Images
@@ -176,6 +180,7 @@ background: #fbfbfb;}
 	overflow: hidden;
 }
 
+/* im_fell_english */
 @font-face {
     font-family: 'im_fell_english';
     src: url('im-fell-fonts/feenit2-webfont.eot');
@@ -211,7 +216,6 @@ background: #fbfbfb;}
     font-weight: bold;
     font-style: normal;
 }
-
 
 #mildendo_nav {
 	width: 50%;
