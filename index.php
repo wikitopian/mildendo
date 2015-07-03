@@ -32,18 +32,22 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<?php get_template_part( 'content', get_post_format() ); ?>
-
-								<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-								<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
-
 							</article>
-							
+
 						<?php comments_template(); ?>
 
 						<?php endwhile; else: ?>
 							<h2>Not Found</h2>
 							<p>Sorry, you seem to be looking for something that simply is not here.</p>
 						<?php endif; ?>
+
+						<div id="mildendo_nav">
+
+							<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+							<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+
+						</div>
+
 				</div> <!-- div class="content-primary" -->
 
 			</div>
