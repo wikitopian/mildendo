@@ -34,14 +34,14 @@
 								<?php get_template_part( 'content', get_post_format() ); ?>
 							</article>
 							
-						<?php //comments_template(); ?>
+						<?php comments_template(); ?>
 
 						<?php endwhile; else: ?>
 							<h2>Not Found</h2>
 							<p>Sorry, you seem to be looking for something that simply is not here.</p>
 						<?php endif; ?>
 
-						<?php //get_template_part( 'nav' ); ?>
+						<?php get_template_part( 'nav' ); ?>
 
 				</div> <!-- div class="content-primary" -->
 			</div>

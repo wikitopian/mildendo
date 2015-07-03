@@ -9,4 +9,3 @@
 </h2>
 <?php the_content( 'Read more...' ); ?>
 <?php get_template_part( 'meta' ); ?>
-<?php comments_template(); ?>

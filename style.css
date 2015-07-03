@@ -153,8 +153,22 @@
 
 #comments:before { content: ''; display: table; clear both; margin-top: 1em; }
 #comments { border-top: 0.2em solid #888; }
-ol.commentlist li { margin-bottom: 1em; padding: 0.5em;}
-ol.commentlist li:nth-child(odd) {
+ol.comment-list li { margin-bottom: 1em; padding: 0.5em;}
+ol.comment-list li:nth-child(odd) {
 background: #eee; }
-ol.commentlist li:nth-child(even) {
+ol.comment-list li:nth-child(even) {
 background: #fbfbfb;}
+
+.mildendo-widget > div > ul > li {
+	list-style-type: none;
+	padding-right: inherit;
+	padding-bottom: 1em;
+}
+
+#comments {
+	max-width: 25em;
+}
+
+.comment {
+	overflow: hidden;
+}
