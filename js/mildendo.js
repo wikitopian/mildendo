@@ -1,5 +1,9 @@
 jQuery(function ($) {
 
+	$("a").each(function(){
+		$(this).attr("rel","external");
+	});
+
 	// Selectively hide menu items on small screens
 	if($(window).width() < 600) {
 
