@@ -281,3 +281,14 @@ background: #fbfbfb;}
 table#mildendo_table {
 	width: 100%;
 }
+
+div.mildendo_gravatar {
+	position: relative;
+	float: right;
+	display: block;
+	text-align: center;
+}
+
+div.mildendo_gravatar > a > span {
+	display: block;
+}
