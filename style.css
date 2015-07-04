@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5 {
 
 	td#mildendo_right {
 		width: 0px;
+		visibility: hidden;
 	}
 
 	article {
@@ -130,6 +131,7 @@ h1, h2, h3, h4, h5 {
 
 	td#mildendo_right {
 		width: 0px;
+		visibility: hidden;
 	}
 
 	article {
@@ -156,6 +158,7 @@ h1, h2, h3, h4, h5 {
 
 	td#mildendo_right {
 		width: 0px;
+		visibility: hidden;
 	}
 
 	article {
@@ -170,7 +173,7 @@ h1, h2, h3, h4, h5 {
 		max-width: 25%;
 		position: fixed;
 		right: 5%;
-        top: 20%;
+		top: 20%;
 	}
 
 	#featured img {
@@ -184,6 +187,7 @@ h1, h2, h3, h4, h5 {
 
 	td#mildendo_right {
 		width: 100%;
+		visibility: visible;
 		vertical-align: top;
 	}
 

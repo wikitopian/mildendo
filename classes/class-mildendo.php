@@ -120,6 +120,6 @@ class Mildendo {
 	}
 
 	public function get_side_image() {
-		return 'http://content.tradyouth.org/uploads/2015/07/cropped-tradyouth-mildendo-header-2015-07-03v03.png';
+		return get_header_image();
 	}
 }
