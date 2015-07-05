@@ -1,6 +1,6 @@
 <?php
 
-define( 'JQMVERSION', '1.4.3' );
+define( 'JQMVERSION', '1.4.5' );
 
 class Mildendo {
 	private $dir;
