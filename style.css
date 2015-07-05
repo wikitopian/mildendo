@@ -183,6 +183,11 @@ h1, h2, h3, h4, h5 {
 
 	td#mildendo_table_article {
 		width: inherit;
+		max-width: 500px;
+	}
+
+	article {
+		max-width: 30em;
 	}
 
 	td#mildendo_right {
@@ -198,10 +203,6 @@ h1, h2, h3, h4, h5 {
 		width: 50%;
 		height: auto;
 		margin-top: 100px;
-	}
-
-	article {
-		width: 30em;
 	}
 
 }
