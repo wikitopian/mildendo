@@ -26,6 +26,10 @@ class Mildendo {
 			array( &$this, 'wp_print_styles' )
 		);
 
+		add_filter( 'mildendo_side_image_filter', array( &$this, 'do_side_image_filter' ) );
+
+		add_action( 'mildendo_side_image', array( &$this, 'do_side_image' ) );
+
 		add_filter( 'wp_title', array( &$this, 'wp_title' ) );
 
 		$custom_header_image = "{$this->dir}/images/mildendo-default.png";
@@ -64,10 +68,6 @@ class Mildendo {
 			'before_title'  => '<h3>',
 			'after_title'   => '</h3>'
 		) );
-
-		register_nav_menus(
-			array( 'footer-menu' => 'Footer Menu' )
-		);
 
 	}
 
@@ -117,7 +117,21 @@ class Mildendo {
 		else return $title;
 	}
 
-	public function get_side_image() {
-		return get_header_image();
+	public function do_side_image() {
+		$image = get_header_image();
+
+		if( has_post_thumbnail() && ( is_single() || is_page() ) ) {
+			$image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
+		}
+
+		$side_image = '<img src="' . $image .  '" />';
+
+		echo apply_filters( 'mildendo_side_image_filter', $side_image );
 	}
+
+	public function do_side_image_filter( $side_image ) {
+
+		return $side_image;
+	}
+
 }

@@ -54,7 +54,7 @@
 							</td>
 
 							<td id="mildendo_right">
-								<img src="<?php echo $mildendo->get_side_image(); ?>" />
+								<?php do_action( 'mildendo_side_image' ); ?>
 							</td>
 
 						</tr>
