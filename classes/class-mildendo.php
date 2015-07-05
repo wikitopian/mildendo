@@ -120,7 +120,7 @@ class Mildendo {
 	public function do_side_image() {
 		$image = get_header_image();
 
-		if( has_post_thumbnail() && ( is_single() || is_page() ) ) {
+		if( !empty( $post ) && has_post_thumbnail() && ( is_single() || is_page() ) ) {
 			$image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 		}
 
