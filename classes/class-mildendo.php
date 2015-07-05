@@ -65,8 +65,6 @@ class Mildendo {
 			'after_title'   => '</h3>'
 		) );
 
-		//register_widget( 'Mildendo_Widget_Search' );
-
 		register_nav_menus(
 			array( 'footer-menu' => 'Footer Menu' )
 		);
