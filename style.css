@@ -12,10 +12,6 @@
 * A theme you can write once and run on anything
 * */
 
-h1, h2, h3, h4, h5 {
-	font-family: im_fell_english;
-}
-
 @media all {
 
 /* Images
@@ -197,43 +193,6 @@ background: #fbfbfb;}
 
 .comment {
 	overflow: hidden;
-}
-
-/* im_fell_english */
-@font-face {
-    font-family: 'im_fell_english';
-    src: url('im-fell-fonts/feenit2-webfont.eot');
-    src: url('im-fell-fonts/feenit2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('im-fell-fonts/feenit2-webfont.woff2') format('woff2'),
-         url('im-fell-fonts/feenit2-webfont.woff') format('woff'),
-         url('im-fell-fonts/feenit2-webfont.ttf') format('truetype'),
-         url('im-fell-fonts/feenit2-webfont.svg#im_fell_englishitalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'im_fell_english';
-    src: url('im-fell-fonts/feenrm2-webfont.eot');
-    src: url('im-fell-fonts/feenrm2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('im-fell-fonts/feenrm2-webfont.woff2') format('woff2'),
-         url('im-fell-fonts/feenrm2-webfont.woff') format('woff'),
-         url('im-fell-fonts/feenrm2-webfont.ttf') format('truetype'),
-         url('im-fell-fonts/feenrm2-webfont.svg#im_fell_englishregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'im_fell_english';
-    src: url('im-fell-fonts/feensc2-webfont.eot');
-    src: url('im-fell-fonts/feensc2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('im-fell-fonts/feensc2-webfont.woff2') format('woff2'),
-         url('im-fell-fonts/feensc2-webfont.woff') format('woff'),
-         url('im-fell-fonts/feensc2-webfont.ttf') format('truetype'),
-         url('im-fell-fonts/feensc2-webfont.svg#im_fell_englishbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
 }
 
 #mildendo_nav {
