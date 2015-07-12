@@ -73,130 +73,104 @@ h1, h2, h3, h4, h5 {
 
 }
 
-@media all and (max-width: 749px) {
-	margin-top: 25px;
+div#mildendo-header img {
+	max-width: 100%;
+	max-height: 100%;
+}
 
-	#mildendo-header {
-		width: 250px;
-		overflow: hidden;
+article {
+	padding-bottom: 2em;
+	overflow: hidden;
+}
+
+div.content-side-image > img  {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media all {
+
+	div#top {
+		display: flex;
 	}
 
-	#mildendo-header img {
-		width: 100%;
-		height: auto;
+	div#top > div {
+		/*display: flex;*/
 	}
 
-	article {
-		max-width: 30em;
-	}
-
-	td#mildendo_right {
-		width: 0px;
-		visibility: hidden;
+	div.content-primary {
+		margin: 20px;
 	}
 
 }
 
-@media all and (min-width: 750px) {
+@media all and ( max-width: 599px ) {
 
-	.content-secondary {
-		float: left;
-		text-align: left;
-		width: 250px;
-		margin-right: 30px;
+	div#top {
+		flex-direction: column;
 	}
 
-	.content-primary {
-		text-align: left;
-		width: auto;
-		overflow: hidden;
+	div#top > div {
+		flex-direction: column;
 	}
 
-	#mildendo-header {
-		width: 250px;
-	}
-
-	#mildendo-header img {
-		width: 100%;
-		height: auto;
-	}
-
-	td#mildendo_table_article {
-		max-width: 425px;
-	}
-
-	article {
-		max-width: 30em;
-	}
-
-	td#mildendo_right {
-		width: 0px;
+	div.content-side-image {
 		visibility: hidden;
+		width: 0px;
+		height: 0px;
 	}
 
 }
 
-@media all and (max-width: 999px) {
-	#featured {
-		width: 90%;
-		margin-right: auto;
-		margin-left: auto;
+@media all and (min-width: 600px) and (max-width: 999px ) {
+
+	div#top {
+		flex-direction: row;
 	}
 
-	#featured img {
-		width: 100%;
-		height: auto;
+	div#top > div {
+		flex-direction: row;
+	}
+
+	div.content-side-image {
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+	}
+
+	div.content-secondary {
+		width: 250px;
+		min-width: 250px;
 	}
 
 }
 
 @media all and (min-width: 1000px) {
-	#featured {
-		float: right;
-		max-width: 25%;
-		position: fixed;
-		right: 5%;
-		top: 20%;
+
+	div#top {
+		flex-direction: row;
 	}
 
-	#featured img {
-		width: 95%;
-		height: auto;
+	div#top > div {
+		flex-direction: row;
 	}
 
-	td#mildendo_table_article {
-		width: inherit;
-		max-width: 425px;
+	div.content-secondary {
+		width: 250px;
+		min-width: 250px;
 	}
 
-	article {
-		min-width: 30em;
-		max-width: 30em;
+	div.content-primary {
+		min-width: 33%;
+		max-width: 500px;
 	}
 
-	td#mildendo_right {
-		width: 100%;
-		visibility: visible;
+	div.content-side-image img {
+		width: 75%;
+		padding: 12.5%;
 	}
 
 }
-
-article {
-	padding-bottom: 2em;
-}
-
-td#mildendo_right {
-	vertical-align: top;
-}
-
-	td#mildendo_right img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-		height: auto;
-		margin-top: 100px;
-	}
 
 #wp-calendar {
 	margin-left: auto;

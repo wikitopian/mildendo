@@ -28,43 +28,35 @@
 
 				<div class="content-primary">
 
-					<table id="mildendo_table">
+					<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-						<tr>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<?php get_template_part( 'content', get_post_format() ); ?>
+						</article>
 
-							<td id="mildendo_table_article">
+					<?php comments_template(); ?>
 
-						<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php endwhile; else: ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<?php get_template_part( 'content', get_post_format() ); ?>
-							</article>
+						<h2>Not Found</h2>
+						<p>Sorry, you seem to be looking for something that simply is not here.</p>
 
-						<?php comments_template(); ?>
+					<?php endif; ?>
 
-						<?php endwhile; else: ?>
-							<h2>Not Found</h2>
-							<p>Sorry, you seem to be looking for something that simply is not here.</p>
-						<?php endif; ?>
-						<div id="mildendo_nav">
+					<div id="mildendo_nav">
 
-							<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-							<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
-
-							</td>
-
-							<td id="mildendo_right">
-								<?php do_action( 'mildendo_side_image' ); ?>
-							</td>
-
-						</tr>
-
-					</table>
-
+						<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+						<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
 					</div>
 
 				</div> <!-- div class="content-primary" -->
+
+				<div class="content-side-image">
+
+					<?php do_action( 'mildendo_side_image' ); ?>
+
+				</div>
 
 			</div>
 
