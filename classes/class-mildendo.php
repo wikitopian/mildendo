@@ -30,6 +30,8 @@ class Mildendo {
 
 		add_action( 'mildendo_side_image', array( &$this, 'do_side_image' ) );
 
+		add_filter( 'mildendo_dashboard_url', array( &$this, 'do_dashboard_url' ) );
+
 		add_filter( 'wp_title', array( &$this, 'wp_title' ) );
 
 		$custom_header_image = "{$this->dir}/images/mildendo-default.png";
@@ -136,6 +138,11 @@ class Mildendo {
 	public function do_side_image_filter( $side_image ) {
 
 		return $side_image;
+	}
+
+	public function do_dashboard_url( $dashboard_url ) {
+
+		return $dashboard_url;
 	}
 
 }

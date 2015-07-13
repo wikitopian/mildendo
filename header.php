@@ -18,7 +18,7 @@
 		<a
 			class="mildendo-desktop-buttons"
 			rel="external"
-			href="<?php echo home_url(); ?>/wp-admin"
+			href="<?php echo apply_filters( 'mildendo_dashboard_url' , home_url() . '/wp-admin' ); ?>"
 			data-icon="gear"
 			data-role="button"
 			>
