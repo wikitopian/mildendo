@@ -22,7 +22,7 @@
 			data-icon="gear"
 			data-role="button"
 			>
-			Dashboard
+			<?php echo apply_filters( 'mildendo_dashboard_title', 'Dashboard' ); ?>
 		</a>
 		<?php if( is_user_logged_in() ) { ?>
 			<a
