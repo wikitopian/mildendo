@@ -126,7 +126,7 @@ class Mildendo {
 			$image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 		}
 
-		$side_image = '<img src="' . $image .  '" />';
+		$side_image = '<img src="' . $image .  '" class="mildendo-side-image" />';
 
 		echo apply_filters( 'mildendo_side_image_filter', $side_image );
 	}
